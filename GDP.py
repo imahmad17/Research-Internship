@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.tsa.api import ARIMA
+import urllib.request
+from urllib.error import URLError
 
 github_path = 'https://raw.githubusercontent.com/imahmad17/Research-Internship/main/world%20gdp%20dataset.csv'
 data = pd.read_csv(github_path)

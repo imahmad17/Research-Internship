@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.tsa.api import ARIMA
 
-# Load your CSV file into a pandas DataFrame
-data = pd.read_csv(r'C:\Users\ahmad\Downloads\World GDP Dataset.csv')
+github_path = 'https://raw.githubusercontent.com/imahmad17/Research-Internship/main/world%20gdp%20dataset.csv'
+data = pd.read_csv(github_path)
 
 # Rename the column
 data.rename(columns={'GDP, current prices(Billions of U.S. dollars)': 'countries'}, inplace=True)
